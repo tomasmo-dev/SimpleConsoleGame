@@ -14,7 +14,7 @@ namespace SimpleGame
         static List<long> Measurements = new List<long>();
         static Stopwatch sw = new Stopwatch();
 
-        private static void DrawFields(Choose chosen)
+        public static void DrawFields(Choose chosen)
         {
             Console.CursorVisible = !true;
 

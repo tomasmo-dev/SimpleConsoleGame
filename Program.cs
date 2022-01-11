@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Threading;
 
 namespace SimpleGame
@@ -10,7 +11,18 @@ namespace SimpleGame
     {
         static void Main(string[] args)
         {
-            PlayGame();
+            RememberGame.Play();
+            //PlayGame();
+        }
+    }
+
+    class RememberGame : RememberingGame
+    {
+
+        public static void Play()
+        {
+            var game = new RememberingGame();
+            game.GameLoop();
         }
     }
 }
